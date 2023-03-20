@@ -62,3 +62,12 @@ document
     const result = valueofb * valueofh;
     displayResult("display-result", result, parallelogramName);
   });
+
+document.getElementById("btn-rhombus").addEventListener("click", function () {
+  const rhombus = document.getElementById("rhombus");
+  const rhombusName = rhombus.innerText;
+  const valueofb = 16;
+  const valueofh = 8;
+  const result = 0.5 * valueofb * valueofh;
+  displayResult("display-result", result, rhombusName);
+});
