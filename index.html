@@ -23,7 +23,7 @@
     </header>
     <main>
         <div class="flex gap-2">
-            <div class="grid grid-cols-3 gap-2 mt-10 m-5">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 mt-10 m-5">
                 <div class="flex flex-col items-center justify-items-center border py-3 rounded ">
                     <img src="images/triangle.png" alt="">
                     <h3 id="triangle">Triangle</h3>
@@ -43,9 +43,9 @@
                     <h3 id="rectangle">Rectangle</h3>
                     <p>Area (A) = w x l</p>
                     <div class="flex gap-2 items-center justify-items-center">
-                        <input id="value-of-b" class="bg-slate-200 w-20 px-2" type="text" placeholder="w">
+                        <input id="value-of-w" class="bg-slate-200 w-20 px-2" type="text" placeholder="w">
                         <p>cm</p>
-                        <input id="value-of-h" class="bg-slate-200 w-20 px-2" type="text" placeholder="l">
+                        <input id="value-of-l" class="bg-slate-200 w-20 px-2" type="text" placeholder="l">
                         <p>cm</p>
                     </div>
                     <button id="btn-rectangle"
@@ -54,40 +54,44 @@
                 </div>
                 <div class="flex flex-col items-center justify-items-center border  py-3 px-3 rounded ">
                     <img src="images/parallelogram.png" alt="">
-                    <h3>Parallelogram</h3>
+                    <h3 id="parallelogram">Parallelogram</h3>
                     <p>Area (A) = b x h</p>
                     <p>b=10cm, h=12cm</p>
-                    <button class="text-white bg-blue-600 mt-2 px-10 py-2 rounded font-semibold">Calculate</button>
+                    <button id="btn-parallelogram"
+                        class="text-white bg-blue-600 mt-2 px-10 py-2 rounded font-semibold">Calculate</button>
 
                 </div>
                 <div class="flex flex-col items-center justify-items-center border  py-3 rounded ">
                     <img src="images/rhombus.png" alt="">
-                    <h3>Rhombus</h3>
+                    <h3 id="rhombus">Rhombus</h3>
                     <p>Area (A) = 0.5 x d1 x d2</p>
                     <p>d1=16cm, d2=8cm</p>
-                    <button class="text-white bg-blue-600 mt-2 px-10 py-2 rounded font-semibold">Calculate</button>
+                    <button id="btn-rhombus"
+                        class="text-white bg-blue-600 mt-2 px-10 py-2 rounded font-semibold">Calculate</button>
 
                 </div>
                 <div class="flex flex-col items-center justify-items-center border  py-3 px-3 rounded">
                     <img src="images/pentagon.png" alt="">
-                    <h3>Pentagon</h3>
+                    <h3 id="pentagon">Pentagon</h3>
                     <p>Area (A) = 0.5 x p x b</p>
                     <p>p = 6cm, b = 10cm</p>
-                    <button class="text-white bg-blue-600 mt-2 px-10 py-2 rounded font-semibold">Calculate</button>
+                    <button id="btn-pentagon"
+                        class="text-white bg-blue-600 mt-2 px-10 py-2 rounded font-semibold">Calculate</button>
 
                 </div>
                 <div class="flex flex-col items-center justify-items-center border py-3 px-3 rounded">
                     <img src="images/ellipse.png" alt="">
-                    <h3>Ellipse</h3>
+                    <h3 id="ellipse">Ellipse</h3>
                     <p>Area (A) = 0.5 x b x h</p>
                     <p> a = 10cm, b = 4cm</p>
-                    <button class="text-white bg-blue-600 mt-2 px-10 py-2 rounded font-semibold">Calculate</button>
+                    <button id="btn-ellipse"
+                        class="text-white bg-blue-600 mt-2 px-10 py-2 rounded font-semibold">Calculate</button>
 
                 </div>
             </div>
-            <div class="w-80 border h-80 mt-10 rounded  ">
+            <div class="w-80 border h-96 mt-10 rounded  ">
                 <div>
-                    <h3 class="font-semibold underline underline-offset-3 text-center	">Area Calculation</h3>
+                    <h3 class="font-bold text-lg underline underline-offset-3 text-center	">Area Calculation</h3>
 
                     <div id="main-container">
                         <ol class="p-2" id="display-result">
