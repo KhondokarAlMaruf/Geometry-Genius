@@ -18,6 +18,7 @@ function displayResult(id, result, name) {
 `;
   container.appendChild(li);
 }
+// for triangle calculation
 document.getElementById("btn-triangle").addEventListener("click", function () {
   const trianle = document.getElementById("triangle");
   const triangleName = trianle.innerText;
@@ -27,7 +28,7 @@ document.getElementById("btn-triangle").addEventListener("click", function () {
   const result = 0.5 * valueOfB * valueOfH;
   displayResult("display-result", result, triangleName);
 });
-// forrectangle calculation
+// for rectangle calculation
 document.getElementById("btn-rectangle").addEventListener("click", function () {
   const rectangle = document.getElementById("rectangle");
   const rectangleName = rectangle.innerText;
@@ -45,24 +46,13 @@ document
   .addEventListener("click", function () {
     const parallelogram = document.getElementById("parallelogram");
     const parallelogramName = parallelogram.innerText;
-
-    const valueOfB = userInputValue("value-b");
-    const valueOfH = userInputValue("value-h");
-    const result = valueOfB * valueOfH;
-    displayResult("display-result", result, parallelogramName);
-  });
-
-document
-  .getElementById("btn-parallelogram")
-  .addEventListener("click", function () {
-    const parallelogram = document.getElementById("parallelogram");
-    const parallelogramName = parallelogram.innerText;
     const valueofb = 10;
     const valueofh = 12;
     const result = valueofb * valueofh;
     displayResult("display-result", result, parallelogramName);
   });
 
+//   for rhombus calculation
 document.getElementById("btn-rhombus").addEventListener("click", function () {
   const rhombus = document.getElementById("rhombus");
   const rhombusName = rhombus.innerText;
@@ -71,7 +61,7 @@ document.getElementById("btn-rhombus").addEventListener("click", function () {
   const result = 0.5 * valueofb * valueofh;
   displayResult("display-result", result, rhombusName);
 });
-
+// for pentagon calculation
 document.getElementById("btn-pentagon").addEventListener("click", function () {
   const pentagon = document.getElementById("pentagon");
   const pentagonName = pentagon.innerText;
@@ -79,4 +69,14 @@ document.getElementById("btn-pentagon").addEventListener("click", function () {
   const valueofh = 10;
   const result = 0.5 * valueofb * valueofh;
   displayResult("display-result", result, pentagonName);
+});
+
+// for elipse calculation
+document.getElementById("btn-ellipse").addEventListener("click", function () {
+  const ellipse = document.getElementById("ellipse");
+  const ellipseName = ellipse.innerText;
+  const valueofb = 10;
+  const valueofh = 4;
+  const result = 0.5 * valueofb * valueofh;
+  displayResult("display-result", result, ellipseName);
 });
