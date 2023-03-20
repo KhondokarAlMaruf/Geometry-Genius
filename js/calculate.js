@@ -71,3 +71,12 @@ document.getElementById("btn-rhombus").addEventListener("click", function () {
   const result = 0.5 * valueofb * valueofh;
   displayResult("display-result", result, rhombusName);
 });
+
+document.getElementById("btn-pentagon").addEventListener("click", function () {
+  const pentagon = document.getElementById("pentagon");
+  const pentagonName = pentagon.innerText;
+  const valueofb = 6;
+  const valueofh = 10;
+  const result = 0.5 * valueofb * valueofh;
+  displayResult("display-result", result, pentagonName);
+});
