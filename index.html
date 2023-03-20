@@ -3,12 +3,92 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>geometry-genius</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
+    <header class="bg-teal-200 flex justify-between items-center justify-items-center px-10 m-5">
+        <div class="">
+            <h1 class="text-3xl font-semibold">Interactive</h1>
+            <h3 class="text-xl font-medium">Geometry Genius</h3>
+        </div>
+        <div>
+            <button class="bg-blue-600 text-lg text-white px-2 py-1 rounded font-medium">Blog</button>
+        </div>
+    </header>
+    <main>
+        <div class="flex gap-2">
+            <div class="grid grid-cols-3 gap-2 mt-10 m-5">
+                <div class="flex flex-col items-center justify-items-center border py-3 rounded ">
+                    <img src="images/triangle.png" alt="">
+                    <h3>Triangle</h3>
+                    <p>Area (A) = 0.5 x b x h</p>
+                    <div class="flex gap-2 items-center justify-items-center">
+                        <input class="bg-slate-200 w-20 px-2" type="number" placeholder="b">
+                        <p>cm</p>
+                        <input class="bg-slate-200 w-20 px-2" type="number" placeholder="h">
+                        <p>cm</p>
+                    </div>
+                    <button class="text-white bg-blue-600 mt-2 px-10 py-2 rounded font-semibold">Calculate</button>
+
+                </div>
+                <div class="flex flex-col items-center justify-items-center border  py-3 rounded">
+                    <img src="images/rectangle.png" alt="">
+                    <h3>Rectangle</h3>
+                    <p>Area (A) = w x l</p>
+                    <div class="flex gap-2 items-center justify-items-center">
+                        <input class="bg-slate-200 w-20 px-2" type="number" placeholder="w">
+                        <p>cm</p>
+                        <input class="bg-slate-200 w-20 px-2" type="number" placeholder="l">
+                        <p>cm</p>
+                    </div>
+                    <button class="text-white bg-blue-600 mt-2 px-10 py-2 rounded font-semibold">Calculate</button>
+
+                </div>
+                <div class="flex flex-col items-center justify-items-center border  py-3 px-3 rounded ">
+                    <img src="images/parallelogram.png" alt="">
+                    <h3>Parallelogram</h3>
+                    <p>Area (A) = b x h</p>
+                    <p>b=10cm, h=12cm</p>
+                    <button class="text-white bg-blue-600 mt-2 px-10 py-2 rounded font-semibold">Calculate</button>
+
+                </div>
+                <div class="flex flex-col items-center justify-items-center border  py-3 rounded ">
+                    <img src="images/rhombus.png" alt="">
+                    <h3>Rhombus</h3>
+                    <p>Area (A) = 0.5 x d1 x d2</p>
+                    <p>d1=16cm, d2=8cm</p>
+                    <button class="text-white bg-blue-600 mt-2 px-10 py-2 rounded font-semibold">Calculate</button>
+
+                </div>
+                <div class="flex flex-col items-center justify-items-center border  py-3 px-3 rounded">
+                    <img src="images/pentagon.png" alt="">
+                    <h3>Pentagon</h3>
+                    <p>Area (A) = 0.5 x p x b</p>
+                    <p>p = 6cm, b = 10cm</p>
+                    <button class="text-white bg-blue-600 mt-2 px-10 py-2 rounded font-semibold">Calculate</button>
+
+                </div>
+                <div class="flex flex-col items-center justify-items-center border py-3 px-3 rounded">
+                    <img src="images/ellipse.png" alt="">
+                    <h3>Ellipse</h3>
+                    <p>Area (A) = 0.5 x b x h</p>
+                    <p> a = 10cm, b = 4cm</p>
+                    <button class="text-white bg-blue-600 mt-2 px-10 py-2 rounded font-semibold">Calculate</button>
+
+                </div>
+            </div>
+            <div class="w-80 border h-80 mt-10 rounded  ">
+                <h3 class="font-semibold underline underline-offset-3 text-center	">Area Calculation</h3>
+
+            </div>
+        </div>
+
+    </main>
 
 </body>
 
